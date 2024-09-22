@@ -31,7 +31,7 @@ if PINECONE_INDEX not in pc.list_indexes().names():
         dimension=embedding_dimension,
         metric='cosine',
         spec=ServerlessSpec(
-            cloud='aws',          
+            cloud='aws',region='us-east-1'       
         )
     )
 # Function to extract text from PDF documents
